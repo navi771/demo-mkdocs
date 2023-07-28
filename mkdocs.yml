@@ -1,0 +1,7 @@
+site_name: Demo Site
+site_url: https://example.com/
+nav:
+    - Home: index.md
+    - About: about.md
+    - Contact: contact.md
+# theme: readthedocs
