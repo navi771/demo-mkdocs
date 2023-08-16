@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://example.com/backstage/features/techdocs/how-to-guides/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>TechDocs How-To guides - Guides</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Guides</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../about/" class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../contact/" class="nav-link">Contact</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Backstage <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../FAQ/" class="dropdown-item">FAQ</a>
+</li>
+                                    
+<li>
+    <a href="../../../publishing/" class="dropdown-item">Publishing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Accessibility</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../accessibility/" class="dropdown-item">Backstage Accessibility</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Api</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../api/deprecations/" class="dropdown-item">Deprecations</a>
+</li>
+            
+<li>
+    <a href="../../../api/utility-apis/" class="dropdown-item">Utility APIs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture decisions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture-decisions/" class="dropdown-item">Architecture Decision Records (ADR)</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr000-template/" class="dropdown-item">ADR000: [TITLE]</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr001-add-adr-log/" class="dropdown-item">ADR001: Architecture Decision Record (ADR) log</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr002-default-catalog-file-format/" class="dropdown-item">ADR002: Default Software Catalog File Format</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr003-avoid-default-exports/" class="dropdown-item">ADR003: Avoid Default Exports and Prefer Named Exports</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr004-module-export-structure/" class="dropdown-item">ADR004: Module Export Structure</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr005-catalog-core-entities/" class="dropdown-item">ADR005: Catalog Core Entities</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr006-avoid-react-fc/" class="dropdown-item">ADR006: Avoid React.FC and React.SFC</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr007-use-msw-to-mock-service-requests/" class="dropdown-item">ADR007: Use MSW to mock http requests</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr008-default-catalog-file-name/" class="dropdown-item">ADR008: Default Catalog File Name</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr009-entity-references/" class="dropdown-item">ADR009: Entity References</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr010-luxon-date-library/" class="dropdown-item">ADR010: Use the Luxon Date Library</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr011-plugin-package-structure/" class="dropdown-item">ADR011: Plugin Package Structure</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr012-use-luxon-locale-and-date-presets/" class="dropdown-item">ADR012: Use Luxon.toLocaleString and date/time presets</a>
+</li>
+            
+<li>
+    <a href="../../../architecture-decisions/adr013-use-node-fetch/" class="dropdown-item">ADR013: Proper use of HTTP fetching libraries</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Auth</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/" class="dropdown-item">Authentication in Backstage</a>
+</li>
+            
+<li>
+    <a href="../../../auth/add-auth-provider/" class="dropdown-item">Contributing New Providers</a>
+</li>
+            
+<li>
+    <a href="../../../auth/glossary/" class="dropdown-item">Glossary</a>
+</li>
+            
+<li>
+    <a href="../../../auth/identity-resolver/" class="dropdown-item">Sign-in Identities and Resolvers</a>
+</li>
+            
+<li>
+    <a href="../../../auth/oauth/" class="dropdown-item">OAuth and OpenID Connect</a>
+</li>
+            
+<li>
+    <a href="../../../auth/oidc/" class="dropdown-item">OIDC provider from scratch</a>
+</li>
+            
+<li>
+    <a href="../../../auth/service-to-service-auth/" class="dropdown-item">Service to Service Auth</a>
+</li>
+            
+<li>
+    <a href="../../../auth/troubleshooting/" class="dropdown-item">Troubleshooting Auth</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Atlassian</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/atlassian/provider/" class="dropdown-item">Atlassian Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Auth0</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/auth0/provider/" class="dropdown-item">Auth0 Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bitbucket</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/bitbucket/provider/" class="dropdown-item">Bitbucket Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">bitbucketServer</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/bitbucketServer/provider/" class="dropdown-item">Bitbucket Server Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloudflare</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/cloudflare/access/" class="dropdown-item">Cloudflare Access Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Github</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/github/provider/" class="dropdown-item">GitHub Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Gitlab</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/gitlab/provider/" class="dropdown-item">GitLab Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/google/gcp-iap-auth/" class="dropdown-item">Google Identity-Aware Proxy Provider</a>
+</li>
+            
+<li>
+    <a href="../../../auth/google/provider/" class="dropdown-item">Google Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Microsoft</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/microsoft/azure-easyauth/" class="dropdown-item">Azure EasyAuth Provider</a>
+</li>
+            
+<li>
+    <a href="../../../auth/microsoft/provider/" class="dropdown-item">Microsoft Azure Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Oauth2 proxy</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/oauth2-proxy/provider/" class="dropdown-item">OAuth 2 Proxy Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Okta</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/okta/provider/" class="dropdown-item">Okta Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Onelogin</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../auth/onelogin/provider/" class="dropdown-item">OneLogin Authentication Provider</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Backend system</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../backend-system/" class="dropdown-item">The Backend System</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../backend-system/architecture/01-index/" class="dropdown-item">Backend System Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/architecture/02-backends/" class="dropdown-item">Backend Instances</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/architecture/03-services/" class="dropdown-item">Backend Services</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/architecture/04-plugins/" class="dropdown-item">Backend Plugins</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/architecture/05-extension-points/" class="dropdown-item">Backend Plugin Extension Points</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/architecture/06-modules/" class="dropdown-item">Plugin Modules</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/architecture/07-naming-patterns/" class="dropdown-item">Backend System Naming Patterns</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building backends</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../backend-system/building-backends/01-index/" class="dropdown-item">Building Backends</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/building-backends/08-migrating/" class="dropdown-item">Migrating your Backend to the New Backend System</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building plugins and modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../backend-system/building-plugins-and-modules/01-index/" class="dropdown-item">Building Backend Plugins and Modules</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/building-plugins-and-modules/02-testing/" class="dropdown-item">Testing Backend Plugins and Modules</a>
+</li>
+            
+<li>
+    <a href="../../../backend-system/building-plugins-and-modules/08-migrating/" class="dropdown-item">Migrating your Backend Plugin to the New Backend System</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core services</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../backend-system/core-services/01-index/" class="dropdown-item">Core Backend Service APIs</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Conf</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../conf/" class="dropdown-item">Static Configuration in Backstage</a>
+</li>
+            
+<li>
+    <a href="../../../conf/defining/" class="dropdown-item">Defining Configuration for your Plugin</a>
+</li>
+            
+<li>
+    <a href="../../../conf/reading/" class="dropdown-item">Reading Backstage Configuration</a>
+</li>
+            
+<li>
+    <a href="../../../conf/writing/" class="dropdown-item">Writing Backstage Configuration Files</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Deployment</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../deployment/" class="dropdown-item">Deploying Backstage</a>
+</li>
+            
+<li>
+    <a href="../../../deployment/docker/" class="dropdown-item">Building a Docker image</a>
+</li>
+            
+<li>
+    <a href="../../../deployment/flightcontrol/" class="dropdown-item">Deploying with Flightcontrol</a>
+</li>
+            
+<li>
+    <a href="../../../deployment/heroku/" class="dropdown-item">Deploying with Heroku</a>
+</li>
+            
+<li>
+    <a href="../../../deployment/k8s/" class="dropdown-item">Deploying with Kubernetes</a>
+</li>
+            
+<li>
+    <a href="../../../deployment/koyeb/" class="dropdown-item">Deploying with Koyeb</a>
+</li>
+            
+<li>
+    <a href="../../../deployment/scaling/" class="dropdown-item">Scaling Backstage Deployments</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Backstage deploy</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../deployment/backstage-deploy/aws/" class="dropdown-item">Deploying Backstage on AWS Lightsail</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Dls</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../dls/component-design-guidelines/" class="dropdown-item">Component Design Guidelines</a>
+</li>
+            
+<li>
+    <a href="../../../dls/contributing-to-storybook/" class="dropdown-item">Contributing to Storybook</a>
+</li>
+            
+<li>
+    <a href="../../../dls/design/" class="dropdown-item">Design</a>
+</li>
+            
+<li>
+    <a href="../../../dls/figma/" class="dropdown-item">Figma</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Features</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kubernetes</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kubernetes/" class="dropdown-item">Kubernetes</a>
+</li>
+            
+<li>
+    <a href="../../kubernetes/authentication/" class="dropdown-item">Kubernetes Authentication</a>
+</li>
+            
+<li>
+    <a href="../../kubernetes/configuration/" class="dropdown-item">Configuring Kubernetes integration</a>
+</li>
+            
+<li>
+    <a href="../../kubernetes/installation/" class="dropdown-item">Installation</a>
+</li>
+            
+<li>
+    <a href="../../kubernetes/proxy/" class="dropdown-item">Kubernetes Backend Proxy Endpoint</a>
+</li>
+            
+<li>
+    <a href="../../kubernetes/troubleshooting/" class="dropdown-item">Troubleshooting Kubernetes</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Search</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../search/" class="dropdown-item">Search Documentation</a>
+</li>
+            
+<li>
+    <a href="../../search/architecture/" class="dropdown-item">Search Architecture</a>
+</li>
+            
+<li>
+    <a href="../../search/concepts/" class="dropdown-item">Search Concepts</a>
+</li>
+            
+<li>
+    <a href="../../search/getting-started/" class="dropdown-item">Getting Started with Search</a>
+</li>
+            
+<li>
+    <a href="../../search/how-to-guides/" class="dropdown-item">Search How-To guides</a>
+</li>
+            
+<li>
+    <a href="../../search/search-engines/" class="dropdown-item">Search Engines</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Software catalog</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../software-catalog/" class="dropdown-item">Backstage Software Catalog</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/api/" class="dropdown-item">API</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/catalog-customization/" class="dropdown-item">Catalog Customization</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/configuration/" class="dropdown-item">Catalog Configuration</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/creating-the-catalog-graph/" class="dropdown-item">Creating the Catalog Graph</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/descriptor-format/" class="dropdown-item">Descriptor Format of Catalog Entities</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/extending-the-model/" class="dropdown-item">Extending the model</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/external-integrations/" class="dropdown-item">External integrations</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/life-of-an-entity/" class="dropdown-item">The Life of an Entity</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/references/" class="dropdown-item">Entity References</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/system-model/" class="dropdown-item">System Model</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/well-known-annotations/" class="dropdown-item">Well-known Annotations on Catalog Entities</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/well-known-relations/" class="dropdown-item">Well-known Relations between Catalog Entities</a>
+</li>
+            
+<li>
+    <a href="../../software-catalog/well-known-statuses/" class="dropdown-item">Well-known Status fields of Catalog Entities</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Software templates</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../software-templates/" class="dropdown-item">Backstage Software Templates</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/adding-templates/" class="dropdown-item">Adding your own Templates</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/authorizing-parameters-steps-and-actions/" class="dropdown-item">Authorizing parameters, steps and actions</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/builtin-actions/" class="dropdown-item">Builtin actions</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/configuration/" class="dropdown-item">Software Template Configuration</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/input-examples/" class="dropdown-item">Input Examples</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/migrating-from-v1beta2-to-v1beta3/" class="dropdown-item">Migrating to v1beta3 templates</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/testing-scaffolder-alpha/" class="dropdown-item">Experimental: Testing out the alpha Scaffolder plugin</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/ui-options-examples/" class="dropdown-item">ui:options Examples</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/writing-custom-actions/" class="dropdown-item">Writing Custom Actions</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/writing-custom-field-extensions/" class="dropdown-item">Writing Custom Field Extensions</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/writing-custom-step-layouts/" class="dropdown-item">Writing custom step layouts</a>
+</li>
+            
+<li>
+    <a href="../../software-templates/writing-templates/" class="dropdown-item">Writing Templates</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Techdocs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">TechDocs Documentation</a>
+</li>
+            
+<li>
+    <a href="../FAQ/" class="dropdown-item">TechDocs FAQ</a>
+</li>
+            
+<li>
+    <a href="../addons/" class="dropdown-item">TechDocs Addons</a>
+</li>
+            
+<li>
+    <a href="../architecture/" class="dropdown-item">TechDocs Architecture</a>
+</li>
+            
+<li>
+    <a href="../cli/" class="dropdown-item">TechDocs CLI</a>
+</li>
+            
+<li>
+    <a href="../concepts/" class="dropdown-item">Concepts</a>
+</li>
+            
+<li>
+    <a href="../configuration/" class="dropdown-item">TechDocs Configuration Options</a>
+</li>
+            
+<li>
+    <a href="../configuring-ci-cd/" class="dropdown-item">Configuring CI/CD to generate and publish TechDocs sites</a>
+</li>
+            
+<li>
+    <a href="../creating-and-publishing/" class="dropdown-item">Creating and publishing your docs</a>
+</li>
+            
+<li>
+    <a href="../getting-started/" class="dropdown-item">Getting Started</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">TechDocs How-To guides</a>
+</li>
+            
+<li>
+    <a href="../troubleshooting/" class="dropdown-item">Troubleshooting TechDocs</a>
+</li>
+            
+<li>
+    <a href="../using-cloud-storage/" class="dropdown-item">Using Cloud Storage for TechDocs generated files</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Getting started</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../getting-started/" class="dropdown-item">Getting Started</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/app-custom-theme/" class="dropdown-item">Customize the look-and-feel of your App</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/concepts/" class="dropdown-item">Key Concepts</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/configuration/" class="dropdown-item">Getting Started, configuring Backstage</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/configure-app-with-plugins/" class="dropdown-item">Configuring App with plugins</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/contributors/" class="dropdown-item">Contributors</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/create-an-app/" class="dropdown-item">Create an App</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/getting-involved/" class="dropdown-item">Getting Involved</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/homepage/" class="dropdown-item">Backstage homepage - Setup and Customization</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/keeping-backstage-updated/" class="dropdown-item">Keeping Backstage Updated</a>
+</li>
+            
+<li>
+    <a href="../../../getting-started/project-structure/" class="dropdown-item">Backstage Project Structure</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Integrations</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/" class="dropdown-item">Integrations</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Aws s3</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/aws-s3/discovery/" class="dropdown-item">AWS S3 Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/aws-s3/locations/" class="dropdown-item">Amazon Web Services S3 Locations</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Azure</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/azure/discovery/" class="dropdown-item">Azure DevOps Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/azure/locations/" class="dropdown-item">Azure DevOps Locations</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/azure/org/" class="dropdown-item">Microsoft Azure Active Directory Organizational Data</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">bitbucketCloud</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/bitbucketCloud/discovery/" class="dropdown-item">Bitbucket Cloud Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/bitbucketCloud/locations/" class="dropdown-item">Bitbucket Cloud Locations</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">bitbucketServer</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/bitbucketServer/discovery/" class="dropdown-item">Bitbucket Server Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/bitbucketServer/locations/" class="dropdown-item">Bitbucket Server Locations</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Datadog rum</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/datadog-rum/installation/" class="dropdown-item">Datadog RUM Installation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Gerrit</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/gerrit/discovery/" class="dropdown-item">Gerrit Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/gerrit/locations/" class="dropdown-item">Gerrit Locations</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Gitea</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/gitea/locations/" class="dropdown-item">Gitea Locations</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Github</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/github/discovery/" class="dropdown-item">GitHub Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/github/github-apps/" class="dropdown-item">GitHub Apps</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/github/locations/" class="dropdown-item">GitHub Locations</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/github/org/" class="dropdown-item">GitHub Organizational Data</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Gitlab</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/gitlab/discovery/" class="dropdown-item">GitLab Discovery</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/gitlab/locations/" class="dropdown-item">GitLab Locations</a>
+</li>
+            
+<li>
+    <a href="../../../integrations/gitlab/org/" class="dropdown-item">GitLab Organizational Data</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google cloud storage</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/google-cloud-storage/locations/" class="dropdown-item">Google Cloud Storage Locations</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ldap</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../integrations/ldap/org/" class="dropdown-item">LDAP Organizational Data</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Local dev</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../local-dev/cli-build-system/" class="dropdown-item">Build System</a>
+</li>
+            
+<li>
+    <a href="../../../local-dev/cli-commands/" class="dropdown-item">Commands</a>
+</li>
+            
+<li>
+    <a href="../../../local-dev/cli-overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../../local-dev/debugging/" class="dropdown-item">Debugging Backstage</a>
+</li>
+            
+<li>
+    <a href="../../../local-dev/linking-local-packages/" class="dropdown-item">Linking in Local Packages</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Overview</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../overview/adopting/" class="dropdown-item">Strategies for adopting</a>
+</li>
+            
+<li>
+    <a href="../../../overview/architecture-overview/" class="dropdown-item">Architecture overview</a>
+</li>
+            
+<li>
+    <a href="../../../overview/background/" class="dropdown-item">The Spotify Story</a>
+</li>
+            
+<li>
+    <a href="../../../overview/glossary/" class="dropdown-item">Backstage Glossary</a>
+</li>
+            
+<li>
+    <a href="../../../overview/logos/" class="dropdown-item">Logos</a>
+</li>
+            
+<li>
+    <a href="../../../overview/roadmap/" class="dropdown-item">Roadmap</a>
+</li>
+            
+<li>
+    <a href="../../../overview/support/" class="dropdown-item">Support and community</a>
+</li>
+            
+<li>
+    <a href="../../../overview/threat-model/" class="dropdown-item">Backstage Threat Model</a>
+</li>
+            
+<li>
+    <a href="../../../overview/versioning-policy/" class="dropdown-item">Release & Versioning Policy</a>
+</li>
+            
+<li>
+    <a href="../../../overview/vision/" class="dropdown-item">Vision</a>
+</li>
+            
+<li>
+    <a href="../../../overview/what-is-backstage/" class="dropdown-item">What is Backstage?</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Permissions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../permissions/concepts/" class="dropdown-item">Concepts</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/custom-rules/" class="dropdown-item">Defining custom permission rules</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/frontend-integration/" class="dropdown-item">Frontend Integration</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/getting-started/" class="dropdown-item">Getting Started</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/writing-a-policy/" class="dropdown-item">Writing a permission policy</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Plugin authors</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../permissions/plugin-authors/01-setup/" class="dropdown-item">1. Tutorial setup</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/plugin-authors/02-adding-a-basic-permission-check/" class="dropdown-item">2. Adding a basic permission check</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/plugin-authors/03-adding-a-resource-permission-check/" class="dropdown-item">3. Adding a resource permission check</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/plugin-authors/04-authorizing-access-to-paginated-data/" class="dropdown-item">4. Authorizing access to paginated data</a>
+</li>
+            
+<li>
+    <a href="../../../permissions/plugin-authors/05-frontend-authorization/" class="dropdown-item">5. Frontend Components with Authorization</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Releases</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../releases/v1.0.0/" class="dropdown-item">v1.0.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.1.0-changelog/" class="dropdown-item">Release v1.1.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.1.0/" class="dropdown-item">v1.1.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.10.0-changelog/" class="dropdown-item">Release v1.10.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.10.0-next.0-changelog/" class="dropdown-item">Release v1.10.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.10.0-next.1-changelog/" class="dropdown-item">Release v1.10.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.10.0-next.2-changelog/" class="dropdown-item">Release v1.10.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.10.0/" class="dropdown-item">v1.10.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.11.0-changelog/" class="dropdown-item">Release v1.11.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.11.0-next.0-changelog/" class="dropdown-item">Release v1.11.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.11.0-next.1-changelog/" class="dropdown-item">Release v1.11.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.11.0-next.2-changelog/" class="dropdown-item">Release v1.11.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.11.0/" class="dropdown-item">v1.11.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.12.0-changelog/" class="dropdown-item">Release v1.12.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.12.0-next.0-changelog/" class="dropdown-item">Release v1.12.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.12.0-next.1-changelog/" class="dropdown-item">Release v1.12.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.12.0-next.2-changelog/" class="dropdown-item">Release v1.12.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.12.0/" class="dropdown-item">v1.12.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.13.0-changelog/" class="dropdown-item">Release v1.13.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.13.0-next.0-changelog/" class="dropdown-item">Release v1.13.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.13.0-next.1-changelog/" class="dropdown-item">Release v1.13.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.13.0-next.2-changelog/" class="dropdown-item">Release v1.13.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.13.0-next.3-changelog/" class="dropdown-item">Release v1.13.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.13.0/" class="dropdown-item">v1.13.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.14.0-changelog/" class="dropdown-item">Release v1.14.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.14.0-next.0-changelog/" class="dropdown-item">Release v1.14.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.14.0-next.1-changelog/" class="dropdown-item">Release v1.14.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.14.0-next.2-changelog/" class="dropdown-item">Release v1.14.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.14.0/" class="dropdown-item">v1.14.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.15.0-changelog/" class="dropdown-item">Release v1.15.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.15.0-next.0-changelog/" class="dropdown-item">Release v1.15.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.15.0-next.1-changelog/" class="dropdown-item">Release v1.15.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.15.0-next.2-changelog/" class="dropdown-item">Release v1.15.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.15.0-next.3-changelog/" class="dropdown-item">Release v1.15.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.15.0/" class="dropdown-item">v1.15.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.16.0-changelog/" class="dropdown-item">Release v1.16.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.16.0-next.0-changelog/" class="dropdown-item">Release v1.16.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.16.0-next.1-changelog/" class="dropdown-item">Release v1.16.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.16.0-next.2-changelog/" class="dropdown-item">Release v1.16.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.16.0/" class="dropdown-item">v1.16.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.17.0-changelog/" class="dropdown-item">Release v1.17.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.17.0-next.0-changelog/" class="dropdown-item">Release v1.17.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.17.0-next.1-changelog/" class="dropdown-item">Release v1.17.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.17.0-next.2-changelog/" class="dropdown-item">Release v1.17.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.17.0/" class="dropdown-item">v1.17.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.2.0-changelog/" class="dropdown-item">Release v1.2.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.2.0-next.0-changelog/" class="dropdown-item">Release v1.2.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.2.0-next.1-changelog/" class="dropdown-item">Release v1.2.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.2.0-next.2-changelog/" class="dropdown-item">Release v1.2.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.2.0-next.3-changelog/" class="dropdown-item">Release v1.2.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.2.0/" class="dropdown-item">v1.2.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.3.0-changelog/" class="dropdown-item">Release v1.3.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.3.0-next.0-changelog/" class="dropdown-item">Release v1.3.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.3.0-next.1-changelog/" class="dropdown-item">Release v1.3.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.3.0-next.2-changelog/" class="dropdown-item">Release v1.3.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.3.0/" class="dropdown-item">v1.3.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.4.0-changelog/" class="dropdown-item">Release v1.4.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.4.0-next.0-changelog/" class="dropdown-item">Release v1.4.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.4.0-next.1-changelog/" class="dropdown-item">Release v1.4.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.4.0-next.2-changelog/" class="dropdown-item">Release v1.4.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.4.0-next.3-changelog/" class="dropdown-item">Release v1.4.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.4.0/" class="dropdown-item">v1.4.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.5.0-changelog/" class="dropdown-item">Release v1.5.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.5.0-next.0-changelog/" class="dropdown-item">Release v1.5.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.5.0-next.1-changelog/" class="dropdown-item">Release v1.5.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.5.0-next.2-changelog/" class="dropdown-item">Release v1.5.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.5.0-next.3-changelog/" class="dropdown-item">Release v1.5.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.5.0/" class="dropdown-item">v1.5.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.6.0-changelog/" class="dropdown-item">Release v1.6.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.6.0-next.0-changelog/" class="dropdown-item">Release v1.6.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.6.0-next.1-changelog/" class="dropdown-item">Release v1.6.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.6.0-next.2-changelog/" class="dropdown-item">Release v1.6.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.6.0-next.3-changelog/" class="dropdown-item">Release v1.6.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.6.0/" class="dropdown-item">v1.6.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.7.0-changelog/" class="dropdown-item">Release v1.7.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.7.0-next.0-changelog/" class="dropdown-item">Release v1.7.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.7.0-next.1-changelog/" class="dropdown-item">Release v1.7.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.7.0-next.2-changelog/" class="dropdown-item">Release v1.7.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.7.0/" class="dropdown-item">v1.7.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.8.0-changelog/" class="dropdown-item">Release v1.8.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.8.0-next.0-changelog/" class="dropdown-item">Release v1.8.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.8.0-next.1-changelog/" class="dropdown-item">Release v1.8.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.8.0-next.2-changelog/" class="dropdown-item">Release v1.8.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.8.0/" class="dropdown-item">v1.8.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0-changelog/" class="dropdown-item">Release v1.9.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0-next.0-changelog/" class="dropdown-item">Release v1.9.0-next.0</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0-next.1-changelog/" class="dropdown-item">Release v1.9.0-next.1</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0-next.2-changelog/" class="dropdown-item">Release v1.9.0-next.2</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0-next.3-changelog/" class="dropdown-item">Release v1.9.0-next.3</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0-next.4-changelog/" class="dropdown-item">Release v1.9.0-next.4</a>
+</li>
+            
+<li>
+    <a href="../../../releases/v1.9.0/" class="dropdown-item">v1.9.0</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tutorials/backend-to-backend-auth/" class="dropdown-item">Backend-to-Backend Authentication</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/configuring-plugin-databases/" class="dropdown-item">Configuring Plugin Databases</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/journey/" class="dropdown-item">Future developer journey</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/migrating-away-from-core/" class="dropdown-item">Migrating away from @backstage/core</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/package-role-migration/" class="dropdown-item">Package Role Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/quickstart-app-plugin/" class="dropdown-item">Adding Custom Plugin to Existing Monorepo App</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/react-router-stable-migration/" class="dropdown-item">React Router 6.0 Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/switching-sqlite-postgres/" class="dropdown-item">Switching Backstage from SQLite to PostgreSQL</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/using-backstage-proxy-within-plugin/" class="dropdown-item">Using the Backstage Proxy from Within a Plugin</a>
+</li>
+            
+<li>
+    <a href="../../../tutorials/yarn-migration/" class="dropdown-item">Migration to Yarn 3</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Monorepo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../monorepo/" class="dropdown-item">backstage/mkdocs-monorepo-plugin</a>
+</li>
+                                    
+<li>
+    <a href="../../../../monorepo/CHANGELOG/" class="dropdown-item">Changelog</a>
+</li>
+                                    
+<li>
+    <a href="../../../../monorepo/CODE-OF-CONDUCT/" class="dropdown-item">Contributor Covenant Code of Conduct</a>
+</li>
+                                    
+<li>
+    <a href="../../../../monorepo/CONTRIBUTING/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../../../../monorepo/limitations/" class="dropdown-item">Caveats / Known Design Decisions</a>
+</li>
+                                    
+<li>
+    <a href="../../../../monorepo/philosophy/" class="dropdown-item">Philosophy</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../getting-started/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../troubleshooting/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/backstage/backstage/blob/master/features/techdocs/how-to-guides.md" class="nav-link">
+                                        Edit</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-migrate-from-techdocs-basic-to-recommended-deployment-approach" class="nav-link">How to migrate from TechDocs Basic to Recommended deployment approach?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-understand-techdocs-ref-annotation-values" class="nav-link">How to understand techdocs-ref annotation values</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-customize-the-techdocs-home-page" class="nav-link">How to customize the TechDocs home page?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-customize-the-techdocs-reader-page" class="nav-link">How to customize the TechDocs reader page?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-migrate-from-techdocs-alpha-to-beta" class="nav-link">How to migrate from TechDocs Alpha to Beta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-implement-your-own-techdocs-apis" class="nav-link">How to implement your own TechDocs APIs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-add-the-documentation-setup-to-your-software-templates" class="nav-link">How to add the documentation setup to your software templates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-enable-iframes-in-techdocs" class="nav-link">How to enable iframes in TechDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-add-mermaid-support-in-techdocs" class="nav-link">How to add Mermaid support in TechDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#how-to-implement-a-hybrid-build-strategy" class="nav-link">How to implement a hybrid build strategy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="how-to-migrate-from-techdocs-basic-to-recommended-deployment-approach">How to migrate from TechDocs Basic to Recommended deployment approach?</h2>
+<p>The main difference between TechDocs Basic and Recommended deployment approach
+is where the docs are generated and stored. In Basic or the out-of-the-box
+setup, docs are generated and stored at the server running your Backstage
+instance. But the recommended setup is to generate docs on CI/CD and store the
+generated sites to an external storage (e.g. AWS S3 or GCS). TechDocs in your
+Backstage instance should turn into read-only mode. Read more details and the
+benefits in the <a href="../architecture/">TechDocs Architecture</a>.</p>
+<p>Here are the steps needed to switch from the Basic to Recommended setup -</p>
+<h3 id="1-prepare-a-cloud-storage">1. Prepare a cloud storage</h3>
+<p>Choose a cloud storage provider like AWS, Google Cloud or Microsoft Azure.
+Follow the detailed instructions for
+<a href="../using-cloud-storage/">using cloud storage</a> in TechDocs.</p>
+<h3 id="2-publish-to-storage-from-cicd">2. Publish to storage from CI/CD</h3>
+<p>Start publishing your TechDocs sites from the CI/CD workflow of each repository
+containing the source markdown files. Read the detailed instructions for
+<a href="../configuring-ci-cd/">configuring CI/CD</a>.</p>
+<h3 id="3-switch-techdocs-to-read-only-mode">3. Switch TechDocs to read-only mode</h3>
+<p>In your Backstage instance's <code>app-config.yaml</code>, set <code>techdocs.builder</code> from
+<code>'local'</code> to <code>'external'</code>. By doing this, TechDocs will not try to generate
+docs. Look at <a href="../configuration/">TechDocs configuration</a> for reference.</p>
+<h2 id="how-to-understand-techdocs-ref-annotation-values">How to understand techdocs-ref annotation values</h2>
+<p>If TechDocs is configured to generate docs, it will first download source files
+based on the value of the <code>backstage.io/techdocs-ref</code> annotation defined in the
+Entity's <code>catalog-info.yaml</code> file. This is also called the
+<a href="../concepts/#techdocs-preparer">Prepare</a> step.</p>
+<p>We strongly recommend that the <code>backstage.io/techdocs-ref</code> annotation in each
+documented catalog entity's <code>catalog-info.yaml</code> be set to <code>dir:.</code> in almost all
+situations. This is because TechDocs is aligned with the "docs like code"
+philosophy, whereby documentation should be authored and managed alongside the
+source code of the underlying software itself.</p>
+<p>When you see <code>dir:.</code>, you can translate it to mean:</p>
+<ul>
+<li>That the documentation source code lives in the same location as the
+  <code>catalog-info.yaml</code> file.</li>
+<li>That, in particular, the <code>mkdocs.yml</code> file is a sibling of <code>catalog-info.yaml</code>
+  (meaning, it is in the same directory)</li>
+<li>And that all of the source content of the documentation would be available if
+  one were to download the directory containing those two files (as well as all
+  sub-directories).</li>
+</ul>
+<p>The directory tree of the entity would look something like this:</p>
+<pre><code>├── catalog-info.yaml
+├── mkdocs.yml
+└── docs
+    └── index.md
+</code></pre>
+<p>If, for example, you wanted to keep a lean root directory, you could place your
+<code>mkdocs.yml</code> file in a subdirectory and update the <code>backstage.io/techdocs-ref</code>
+annotation value accordingly, e.g. to <code>dir:./sub-folder</code>:</p>
+<pre><code>├── catalog-info.yaml
+└── sub-folder
+    ├── mkdocs.yml
+    └── docs
+        └── index.md
+</code></pre>
+<p>In rare situations where your TechDocs source content is managed and stored in a
+location completely separate from your <code>catalog-info.yaml</code>, you can instead
+specify a URL location reference, the exact value of which will vary based on
+the source code hosting provider. Notice that instead of the <code>dir:</code> prefix, the
+<code>url:</code> prefix is used instead. For example:</p>
+<ul>
+<li><strong>GitHub</strong>: <code>url:https://githubhost.com/org/repo/tree/&lt;branch_name&gt;</code></li>
+<li><strong>GitLab</strong>: <code>url:https://gitlabhost.com/org/repo/tree/&lt;branch_name&gt;</code></li>
+<li><strong>Bitbucket</strong>: <code>url:https://bitbuckethost.com/project/repo/src/&lt;branch_name&gt;</code></li>
+<li><strong>Azure</strong>: <code>url:https://azurehost.com/organization/project/_git/repository</code></li>
+</ul>
+<p>Note, just as it's possible to specify a subdirectory with the <code>dir:</code> prefix,
+you can also provide a path to a non-root directory inside the repository which
+contains the <code>mkdocs.yml</code> file and <code>docs/</code> directory.</p>
+<p>e.g.
+<code>url:https://github.com/backstage/backstage/tree/master/plugins/techdocs-backend/examples/documented-component</code></p>
+<h3 id="why-is-url-reader-faster-than-a-git-clone">Why is URL Reader faster than a git clone?</h3>
+<p>URL Reader uses the source code hosting provider to download a zip or tarball of
+the repository. The archive does not have any git history attached to it. Also
+it is a compressed file. Hence the file size is significantly smaller than how
+much data git clone has to transfer.</p>
+<h2 id="how-to-customize-the-techdocs-home-page">How to customize the TechDocs home page?</h2>
+<p>TechDocs uses a composability pattern similar to the Search and Catalog plugins
+in Backstage. While a default table experience, similar to the one provided by
+the Catalog plugin, is made available for ease-of-use, it's possible for you to
+provide a completely custom experience, tailored to the needs of your
+organization. For example, TechDocs comes with an alternative grid based layout
+(<code>&lt;EntityListDocsGrid&gt;</code>) and panel layout (<code>TechDocsCustomHome</code>).</p>
+<p>This is done in your <code>app</code> package. By default, you might see something like
+this in your <code>App.tsx</code>:</p>
+<pre><code class="language-tsx">const AppRoutes = () =&gt; {
+  &lt;FlatRoutes&gt;
+    &lt;Route path=&quot;/docs&quot; element={&lt;TechDocsIndexPage /&gt;}&gt;
+      &lt;DefaultTechDocsHome /&gt;
+    &lt;/Route&gt;
+  &lt;/FlatRoutes&gt;;
+};
+</code></pre>
+<h3 id="using-techdocscustomhome">Using TechDocsCustomHome</h3>
+<p>You can easily customize the TechDocs home page using TechDocs panel layout
+(<code>&lt;TechDocsCustomHome /&gt;</code>).</p>
+<p>Modify your <code>App.tsx</code> as follows:</p>
+<pre><code class="language-tsx">import { TechDocsCustomHome } from '@backstage/plugin-techdocs';
+//...
+
+const techDocsTabsConfig = [
+  {
+    label: 'Recommended Documentation',
+    panels: [
+      {
+        title: 'Golden Path',
+        description: 'Documentation about standards to follow',
+        panelType: 'DocsCardGrid',
+        filterPredicate: entity =&gt;
+          entity?.metadata?.tags?.includes('recommended') ?? false,
+      },
+    ],
+  },
+];
+
+const AppRoutes = () =&gt; {
+  &lt;FlatRoutes&gt;
+    &lt;Route
+      path=&quot;/docs&quot;
+      element={&lt;TechDocsCustomHome tabsConfig={techDocsTabsConfig} /&gt;}
+    /&gt;
+  &lt;/FlatRoutes&gt;;
+};
+</code></pre>
+<h3 id="building-a-custom-home-page">Building a Custom home page</h3>
+<p>But you can replace <code>&lt;DefaultTechDocsHome /&gt;</code> with any React component, which
+will be rendered in its place. Most likely, you would want to create and
+maintain such a component in a new directory at
+<code>packages/app/src/components/techdocs</code>, and import and use it in <code>App.tsx</code>:</p>
+<p>For example, you can define the following Custom home page component:</p>
+<pre><code class="language-tsx">import React from 'react';
+
+import { Content } from '@backstage/core-components';
+import {
+  CatalogFilterLayout,
+  EntityOwnerPicker,
+  EntityTagPicker,
+  UserListPicker,
+  EntityListProvider,
+} from '@backstage/plugin-catalog-react';
+import {
+  TechDocsPageWrapper,
+  TechDocsPicker,
+} from '@backstage/plugin-techdocs';
+import { Entity } from '@backstage/catalog-model';
+
+import { EntityListDocsGrid } from '@backstage/plugin-techdocs';
+
+export type CustomTechDocsHomeProps = {
+  groups?: Array&lt;{
+    title: React.ReactNode;
+    filterPredicate: ((entity: Entity) =&gt; boolean) | string;
+  }&gt;;
+};
+
+export const CustomTechDocsHome = ({ groups }: CustomTechDocsHomeProps) =&gt; {
+  return (
+    &lt;TechDocsPageWrapper&gt;
+      &lt;Content&gt;
+        &lt;EntityListProvider&gt;
+          &lt;CatalogFilterLayout&gt;
+            &lt;CatalogFilterLayout.Filters&gt;
+              &lt;TechDocsPicker /&gt;
+              &lt;UserListPicker initialFilter=&quot;all&quot; /&gt;
+              &lt;EntityOwnerPicker /&gt;
+              &lt;EntityTagPicker /&gt;
+            &lt;/CatalogFilterLayout.Filters&gt;
+            &lt;CatalogFilterLayout.Content&gt;
+              &lt;EntityListDocsGrid groups={groups} /&gt;
+            &lt;/CatalogFilterLayout.Content&gt;
+          &lt;/CatalogFilterLayout&gt;
+        &lt;/EntityListProvider&gt;
+      &lt;/Content&gt;
+    &lt;/TechDocsPageWrapper&gt;
+  );
+};
+</code></pre>
+<p>Then you can add the following to your <code>App.tsx</code>:</p>
+<pre><code class="language-tsx">import { CustomTechDocsHome } from './components/techdocs/CustomTechDocsHome';
+// ...
+const AppRoutes = () =&gt; {
+  &lt;FlatRoutes&gt;
+    &lt;Route path=&quot;/docs&quot; element={&lt;TechDocsIndexPage /&gt;}&gt;
+      &lt;CustomTechDocsHome
+        groups={[
+          {
+            title: 'Recommended Documentation',
+            filterPredicate: entity =&gt;
+              entity?.metadata?.tags?.includes('recommended') ?? false,
+          },
+          {
+            title: 'My Docs',
+            filterPredicate: 'ownedByUser',
+          },
+        ]}
+      /&gt;
+    &lt;/Route&gt;
+  &lt;/FlatRoutes&gt;;
+};
+</code></pre>
+<h2 id="how-to-customize-the-techdocs-reader-page">How to customize the TechDocs reader page?</h2>
+<p>Similar to how it is possible to customize the TechDocs Home, it is also
+possible to customize the TechDocs Reader Page. It is done in your <code>app</code>
+package. By default, you might see something like this in your <code>App.tsx</code>:</p>
+<pre><code class="language-tsx">const AppRoutes = () =&gt; {
+  &lt;Route path=&quot;/docs/:namespace/:kind/:name/*&quot; element={&lt;TechDocsReaderPage /&gt;}&gt;
+    {techDocsPage}
+  &lt;/Route&gt;;
+};
+</code></pre>
+<p>The <code>techDocsPage</code> is a default techdocs reader page which lives in
+<code>packages/app/src/components/techdocs</code>. It includes the following without you
+having to set anything up.</p>
+<pre><code class="language-tsx">&lt;Page themeId=&quot;documentation&quot;&gt;
+  &lt;TechDocsReaderPageHeader /&gt;
+  &lt;TechDocsReaderPageSubheader /&gt;
+  &lt;TechDocsReaderPageContent /&gt;
+&lt;/Page&gt;
+</code></pre>
+<p>If you would like to compose your own <code>techDocsPage</code>, you can do so by replacing
+the children of TechDocsPage with something else. Maybe you are <em>just</em>
+interested in replacing the Header:</p>
+<pre><code class="language-tsx">&lt;Page themeId=&quot;documentation&quot;&gt;
+  &lt;Header type=&quot;documentation&quot; title=&quot;Custom Header&quot; /&gt;
+  &lt;TechDocsReaderPageContent /&gt;
+&lt;/Page&gt;
+</code></pre>
+<p>Or maybe you want to disable the in-context search</p>
+<pre><code class="language-tsx">&lt;Page themeId=&quot;documentation&quot;&gt;
+  &lt;Header type=&quot;documentation&quot; title=&quot;Custom Header&quot; /&gt;
+  &lt;TechDocsReaderPageContent withSearch={false} /&gt;
+&lt;/Page&gt;
+</code></pre>
+<p>Or maybe you want to replace the entire TechDocs Page.</p>
+<pre><code class="language-tsx">&lt;Page themeId=&quot;documentation&quot;&gt;
+  &lt;Header type=&quot;documentation&quot; title=&quot;Custom Header&quot; /&gt;
+  &lt;Content data-testid=&quot;techdocs-content&quot;&gt;
+    &lt;p&gt;my own content&lt;/p&gt;
+  &lt;/Content&gt;
+&lt;/Page&gt;
+</code></pre>
+<h2 id="how-to-migrate-from-techdocs-alpha-to-beta">How to migrate from TechDocs Alpha to Beta</h2>
+<blockquote>
+<p>This guide only applies to the "recommended" TechDocs deployment method (where
+an external storage provider and external CI/CD is used). If you use the
+"basic" or "out-of-the-box" setup, you can stop here! No action needed.</p>
+</blockquote>
+<p>For the purposes of this guide, TechDocs Beta version is defined as:</p>
+<ul>
+<li><strong>TechDocs Plugin</strong>: At least <code>v0.11.0</code></li>
+<li><strong>TechDocs Backend Plugin</strong>: At least <code>v0.10.0</code></li>
+<li><strong>TechDocs CLI</strong>: At least <code>v0.7.0</code></li>
+</ul>
+<p>The beta version of TechDocs made a breaking change to the way TechDocs content
+was accessed and stored, allowing pages to be accessed with case-insensitive
+entity triplet paths (e.g. <code>/docs/namespace/kind/name</code> whereas in prior
+versions, they could only be accessed at <code>/docs/namespace/Kind/name</code>). In order
+to enable this change, documentation has to be stored in an external storage
+provider using an object key whose entity triplet is lower-cased.</p>
+<p>New installations of TechDocs since the beta version will work fine with no
+action, but for those who were running TechDocs prior to this version, a
+migration will need to be performed so that all existing content in your storage
+bucket matches this lower-case entity triplet expectation.</p>
+<ol>
+<li>
+<p><strong>Ensure you have the right permissions on your storage provider</strong>: In order
+   to migrate files in your storage provider, the <code>techdocs-cli</code> needs to be
+   able to read/copy/rename/move/delete files. The exact instructions vary by
+   storage provider, but check the <a href="../using-cloud-storage/">using cloud storage</a>
+   page for details.</p>
+</li>
+<li>
+<p><strong>Run a non-destructive migration of files</strong>: Ensure you have the latest
+   version of <code>techdocs-cli</code> installed. Then run the following command, using
+   the details relevant for your provider / configuration. This will copy all
+   files from, e.g. <code>namespace/Kind/name/index.html</code> to
+   <code>namespace/kind/name/index.html</code>, without removing the original files.</p>
+</li>
+</ol>
+<pre><code class="language-sh">techdocs-cli migrate --publisher-type &lt;awsS3|googleGcs|azureBlobStorage&gt; --storage-name &lt;bucket/container name&gt; --verbose
+</code></pre>
+<ol>
+<li>
+<p><strong>Deploy the updated versions of the TechDocs plugins</strong>: Once the migration
+   above has been run, you can deploy the beta versions of the TechDocs backend
+   and frontend plugins to your Backstage instance.</p>
+</li>
+<li>
+<p><strong>Verify that your TechDocs sites are still loading/accessible</strong>: Try
+   accessing a TechDocs site using different entity-triplet case variants, e.g.
+   <code>/docs/namespace/KIND/name</code> or <code>/docs/namespace/kind/name</code>. Your TechDocs
+   site should load regardless of the URL path casing you use.</p>
+</li>
+<li>
+<p><strong>Clean up the old objects from storage</strong>: Once you've verified that your
+   TechDocs site is accessible, you can clean up your storage bucket by
+   re-running the <code>migrate</code> command on the TechDocs CLI, but with an additional
+   <code>removeOriginal</code> flag passed:</p>
+</li>
+</ol>
+<pre><code class="language-sh">techdocs-cli migrate --publisher-type &lt;awsS3|googleGcs|azureBlobStorage&gt; --storage-name &lt;bucket/container name&gt; --removeOriginal --verbose
+</code></pre>
+<ol>
+<li><strong>Update your CI/CD pipelines to use the beta version of the TechDocs CLI</strong>:
+   Finally, you can update all of your CI/CD pipelines to use at least v0.x.y of
+   the TechDocs CLI, ensuring that all sites are published to the new,
+   lower-cased entity triplet paths going forward.</li>
+</ol>
+<p>If you encounter problems running this migration, please <a href="https://github.com/backstage/backstage/issues/new?assignees=&amp;labels=bug&amp;template=bug_template.md&amp;title=[TechDocs]%20Unable%20to%20run%20beta%20migration">report the
+issue</a>. You can temporarily revert to pre-beta storage
+expectations with a configuration change:</p>
+<pre><code class="language-yaml">techdocs:
+  legacyUseCaseSensitiveTripletPaths: true
+</code></pre>
+<h2 id="how-to-implement-your-own-techdocs-apis">How to implement your own TechDocs APIs</h2>
+<p>The TechDocs plugin provides implementations of two primary APIs by default: the
+<a href="https://github.com/backstage/backstage/blob/55114cfeb7045e3e5eeeaf67546b58964f4adcc7/plugins/techdocs/src/api.ts#L33">TechDocsStorageApi</a>,
+which is responsible for talking to TechDocs storage to fetch files to render,
+and
+<a href="https://github.com/backstage/backstage/blob/55114cfeb7045e3e5eeeaf67546b58964f4adcc7/plugins/techdocs/src/api.ts#L49">TechDocsApi</a>,
+which is responsible for talking to techdocs-backend.</p>
+<p>There may be occasions where you need to implement these two APIs yourself, to
+customize them to your own needs. The purpose of this guide is to walk you
+through how to do that in two steps.</p>
+<ol>
+<li>Implement the <code>TechDocsStorageApi</code> and <code>TechDocsApi</code> interfaces according to
+   your needs.</li>
+</ol>
+<pre><code class="language-typescript">export class TechDocsCustomStorageApi implements TechDocsStorageApi {
+  // your implementation
+}
+
+export class TechDocsCustomApiClient implements TechDocsApi {
+  // your implementation
+}
+</code></pre>
+<ol>
+<li>Override the API refs <code>techdocsStorageApiRef</code> and <code>techdocsApiRef</code> with your
+   new implemented APIs in the <code>App.tsx</code> using <code>ApiFactories</code>.
+   <a href="https://backstage.io/docs/api/utility-apis#app-apis">Read more about App APIs</a>.</li>
+</ol>
+<pre><code class="language-typescript">const app = createApp({
+  apis: [
+    // TechDocsStorageApi
+    createApiFactory({
+      api: techdocsStorageApiRef,
+      deps: { discoveryApi: discoveryApiRef, configApi: configApiRef },
+      factory({ discoveryApi, configApi }) {
+        return new TechDocsCustomStorageApi({ discoveryApi, configApi });
+      },
+    }),
+    // TechDocsApi
+    createApiFactory({
+      api: techdocsApiRef,
+      deps: { discoveryApi: discoveryApiRef },
+      factory({ discoveryApi }) {
+        return new TechDocsCustomApiClient({ discoveryApi });
+      },
+    }),
+  ],
+});
+</code></pre>
+<h2 id="how-to-add-the-documentation-setup-to-your-software-templates">How to add the documentation setup to your software templates</h2>
+<p><a href="https://backstage.io/docs/features/software-templates/">Software Templates</a>
+in Backstage is a tool that can help your users to create new components out of
+already configured templates. It comes with a set of default templates to use,
+but you can also
+<a href="https://backstage.io/docs/features/software-templates/adding-templates">add your own templates</a>.</p>
+<p>If you have your own templates set up, we highly recommend that you include the
+required setup for TechDocs in those templates. When creating a new component,
+your users will then get a TechDocs site up and running automatically, ready for
+them to start writing technical documentation.</p>
+<p>The purpose of this how-to guide is to walk you through how to add the required
+configuration and some default markdown files to your new template. You can use
+the
+<a href="https://github.com/backstage/software-templates/tree/main/scaffolder-templates/react-ssr-template">react-ssr-template</a>
+as a reference when walking through the steps.</p>
+<p>Prerequisites:</p>
+<ul>
+<li>
+<p>An existing software template including a <code>template.yaml</code> together with a
+  skeleton folder including at least a <code>catalog-info.yaml</code>.</p>
+</li>
+<li>
+<p>Update your component's entity description by adding the following lines to
+   the <code>catalog-info.yaml</code> in your skeleton folder.</p>
+</li>
+</ul>
+<pre><code class="language-yaml">annotations:
+  backstage.io/techdocs-ref: dir:.
+</code></pre>
+<p>The
+<a href="../../software-catalog/well-known-annotations/#backstageiotechdocs-ref"><code>backstage.io/techdocs-ref</code> annotation</a>
+is used by TechDocs to download the documentation source files for generating an
+entity's TechDocs site.</p>
+<ol>
+<li>Create an <code>mkdocs.yml</code> file in the root of your skeleton folder with the
+   following content:</li>
+</ol>
+<pre><code class="language-yaml">site_name: ${{values.component_id}}
+site_description: ${{values.description}}
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
+</code></pre>
+<ol>
+<li>Create a <code>/docs</code> folder in the skeleton folder with at least an <code>index.md</code>
+   file in it.</li>
+</ol>
+<p>The <code>docs/index.md</code> can for example have the following content:</p>
+<pre><code class="language-markdown"># ${{ values.component_id }}
+
+${{ values.description }}
+
+## Getting started
+
+Start writing your documentation by adding more markdown (.md) files to this
+folder (/docs) or replace the content in this file.
+</code></pre>
+<blockquote>
+<p>Note: The values of <code>site_name</code>, <code>component_id</code> and <code>site_description</code> depends
+on how you have configured your <code>template.yaml</code></p>
+</blockquote>
+<p>Done! You now have support for TechDocs in your own software template!</p>
+<h2 id="how-to-enable-iframes-in-techdocs">How to enable iframes in TechDocs</h2>
+<p>TechDocs uses the <a href="https://github.com/cure53/DOMPurify">DOMPurify</a> library to
+sanitize HTML and prevent XSS attacks.</p>
+<p>It's possible to allow some iframes based on a list of allowed hosts. To do
+this, add the allowed hosts in the <code>techdocs.sanitizer.allowedIframeHosts</code>
+configuration of your <code>app-config.yaml</code>.</p>
+<p>For example:</p>
+<pre><code class="language-yaml">techdocs:
+  sanitizer:
+    allowedIframeHosts:
+      - drive.google.com
+</code></pre>
+<p>This way, all iframes where the host in the src attribute is in the
+<code>sanitizer.allowedIframeHosts</code> list will be displayed.</p>
+<h2 id="how-to-add-mermaid-support-in-techdocs">How to add Mermaid support in TechDocs</h2>
+<p>To add <code>Mermaid</code> support in TechDocs, you can use <a href="https://kroki.io"><code>kroki</code></a>
+that creates diagrams from Textual descriptions. It is a single rendering
+gateway for all popular diagrams-as-a-code tools. It supports an enormous number
+of diagram types.</p>
+<ol>
+<li><strong>Create and Publish Docker image:</strong> Create the Docker image from the
+   following <code>Dockerfile</code> and publish it to DockerHub.</li>
+</ol>
+<pre><code class="language-docker">FROM python:3.10-alpine
+
+RUN apk update &amp;&amp; apk --no-cache add gcc musl-dev openjdk11-jdk curl graphviz ttf-dejavu fontconfig
+
+RUN pip install --upgrade pip &amp;&amp; pip install mkdocs-techdocs-core==1.2.0
+
+RUN pip install mkdocs-kroki-plugin
+
+ENTRYPOINT [ &quot;mkdocs&quot; ]
+</code></pre>
+<p>Create a repository in your DockerHub and run the below command in the same
+folder where your <code>Dockerfile</code> is present:</p>
+<pre><code class="language-shell">docker build . -t dockerHub_Username/repositoryName:tagName
+</code></pre>
+<p>Once the docker image is ready, push it to DockerHub.</p>
+<ol>
+<li><strong>Update app-config.yaml:</strong> So that when your app generates TechDocs, it will
+   pull your docker image from DockerHub.</li>
+</ol>
+<pre><code class="language-python">techdocs:
+  builder: 'local' # Alternatives - 'external'
+  generator:
+    runIn: 'docker' # Alternatives - 'local'
+    dockerImage: dockerHub_Username/repositoryName:tagName
+    pullImage: true
+  publisher:
+    type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
+</code></pre>
+<ol>
+<li><strong>Add the <code>kroki</code> plugin in <code>mkdocs.yml</code>:</strong></li>
+</ol>
+<pre><code class="language-yml">plugins:
+  - techdocs-core
+  - kroki
+</code></pre>
+<blockquote>
+<p>Note: you will very likely want to set a <code>kroki</code> <code>ServerURL</code> configuration in your
+<code>mkdocs.yml</code> as well. The default value is the publicly hosted <code>kroki.io</code>. If
+you have sensitive information in your organization's diagrams, you should set
+up a <a href="https://docs.kroki.io/kroki/setup/install/">server of your own</a> and use it
+instead. Check out <a href="https://github.com/AVATEAM-IT-SYSTEMHAUS/mkdocs-kroki-plugin#config">mkdocs-kroki-plugin config</a>
+for more plugin configuration details.</p>
+</blockquote>
+<ol>
+<li><strong>Add mermaid code into TechDocs:</strong></li>
+</ol>
+<pre><code class="language-md">```kroki-mermaid
+sequenceDiagram
+GitLab-&gt;&gt;Kroki: Request rendering
+Kroki-&gt;&gt;Mermaid: Request rendering
+Mermaid--&gt;&gt;Kroki: Image
+Kroki--&gt;&gt;GitLab: Image
+```
+</code></pre>
+<p>Done! Now you have a support of the following diagrams along with mermaid:</p>
+<ul>
+<li><code>PlantUML</code></li>
+<li><code>BlockDiag</code></li>
+<li><code>BPMN</code></li>
+<li><code>ByteField</code></li>
+<li><code>SeqDiag</code></li>
+<li><code>ActDiag</code></li>
+<li><code>NwDiag</code></li>
+<li><code>PacketDiag</code></li>
+<li><code>RackDiag</code></li>
+<li><code>C4 with PlantUML</code></li>
+<li><code>Ditaa</code></li>
+<li><code>Erd</code></li>
+<li><code>Excalidraw</code></li>
+<li><code>GraphViz</code></li>
+<li><code>Nomnoml</code></li>
+<li><code>Pikchr</code></li>
+<li><code>Svgbob</code></li>
+<li><code>UMlet</code></li>
+<li><code>Vega</code></li>
+<li><code>Vega-Lite</code></li>
+<li><code>WaveDrom</code></li>
+</ul>
+<h2 id="how-to-implement-a-hybrid-build-strategy">How to implement a hybrid build strategy</h2>
+<p>One limitation of the <a href="../architecture/#recommended-deployment">Recommended deployment</a> is that
+the experience for users requires modifying their CI/CD process to publish
+their TechDocs. For some users, this may be unnecessary, and provides a barrier
+to entry for onboarding users to Backstage. However, a purely local TechDocs
+build restricts TechDocs creators to using the tooling provided in Backstage,
+as well as the plugins and features provided in the Backstage-included <code>mkdocs</code>
+installation.</p>
+<p>To accommodate both of these use-cases, users can implement a custom <a href="../concepts/#techdocs-build-strategy">Build Strategy</a>
+with logic to encode which TechDocs should be built locally, and which will be
+built externally.</p>
+<p>To achieve this hybrid build model:</p>
+<ol>
+<li>In your Backstage instance's <code>app-config.yaml</code>, set <code>techdocs.builder</code> to
+   <code>'local'</code>. This ensures that Backstage will build docs for users who want the
+   'out-of-the-box' experience.</li>
+<li>Configure external storage of TechDocs as normal for a production deployment.
+   This allows Backstage to publish documentation to your storage, as well as
+   allowing other users to publish documentation from their CI/CD pipelines.</li>
+<li>Create a custom build strategy, that implements the <code>DocsBuildStrategy</code> interface,
+   and which implements your custom logic for determining whether to build docs for
+   a given entity.
+   For example, to only build docs when an entity has the <code>company.com/techdocs-builder</code>
+   annotation set to <code>'local'</code>:</li>
+</ol>
+<p>```typescript
+   export class AnnotationBasedBuildStrategy {
+     private readonly config: Config;</p>
+<pre><code> constructor(config: Config) {
+   this.config = config;
+ }
+
+ async shouldBuild(_: Entity): Promise&lt;boolean&gt; {
+   return (
+     this.entity.metadata?.annotations?.['company.com/techdocs-builder'] ===
+     'local'
+   );
+ }
+</code></pre>
+<p>}
+   ```</p>
+<ol>
+<li>Pass an instance of this Build Strategy as the <code>docsBuildStrategy</code> parameter of the
+   TechDocs backend <code>createRouter</code> method.</li>
+</ol>
+<p>Users should now be able to choose to have their documentation built and published by
+the TechDocs backend by adding the <code>company.com/techdocs-builder</code> annotation to their
+entity. If the value of this annotation is <code>'local'</code>, the TechDocs backend will build
+and publish the documentation for them. If the value of the <code>company.com/techdocs-builder</code>
+annotation is anything other than <code>'local'</code>, the user is responsible for publishing
+documentation to the appropriate location in the TechDocs external storage.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
