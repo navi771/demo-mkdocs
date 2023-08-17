@@ -4,23 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Guides</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Integrations - Guides</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Guides</a>
+                <a class="navbar-brand" href="../../..">Guides</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="backstage/docs/publishing/" class="dropdown-item">Backstage</a>
+    <a href="../publishing/" class="dropdown-item">Backstage</a>
 </li>
                                     
 <li>
-    <a href="mono-repo/docs/CODE-OF-CONDUCT/" class="dropdown-item">Monorepo</a>
+    <a href="../../../mono-repo/docs/CODE-OF-CONDUCT/" class="dropdown-item">Monorepo</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="fast-api/docs/en/docs/" class="nav-link">Publishing-Api</a>
+                                <a href="../../../fast-api/docs/en/docs/" class="nav-link">Publishing-Api</a>
                             </li>
                         </ul>
 
@@ -54,6 +54,10 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/backstage/backstage/edit/master/docs/integrations/index.md" class="nav-link">
+                                        Edit</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +76,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#getting-started" class="nav-link">Getting Started</a>
+            <li class="nav-item" data-level="2"><a href="#configuration" class="nav-link">Configuration</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -81,11 +85,21 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="getting-started">Getting Started</h2>
-<p>Getting Started Mkdocs Demo</p>
-<!-- ## Introduction
-
-This guide is a quick overview of getting connected with the Tietoevry APIs. Note that currently, most of these APIs currently requires a dedicated connection in order to work --></div>
+<p>Integrations allow Backstage to read or publish data using external providers
+such as GitHub, GitLab, Bitbucket, LDAP, or cloud providers.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Integrations are configured at the root level of <code>app-config.yaml</code> since
+integrations are used by many Backstage core features and other plugins.</p>
+<p>Each key under <code>integrations</code> is a separate configuration for a single external
+provider. Providers each have different configuration; here's an example of
+configuration to use GitHub:</p>
+<pre><code class="language-yaml">integrations:
+  github:
+    - host: github.com
+      token: ${GITHUB_TOKEN}
+</code></pre>
+<p>See documentation for each type of integration for full details on
+configuration.</p></div>
             </div>
         </div>
 
@@ -93,14 +107,14 @@ This guide is a quick overview of getting connected with the Tietoevry APIs. Not
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -165,8 +179,3 @@ This guide is a quick overview of getting connected with the Tietoevry APIs. Not
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.5.2
-Build Date UTC : 2023-08-17 13:43:40.392956+00:00
--->
